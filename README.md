@@ -159,7 +159,7 @@ python main.py reset
 └── requirements.txt        # Dependencies
 ```
 
-## Advanced Configuration
+## Parameters Configuration
 
 ### Adjust Generation Parameters
 
