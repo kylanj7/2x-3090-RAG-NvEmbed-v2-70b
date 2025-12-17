@@ -1,10 +1,9 @@
 # HuggingFace RAG System
 
-Enterprise-grade RAG system using HuggingFace models with quantization support for efficient inference.
+RAG system using HuggingFace models with quantization support for efficient inference. Nemotron 70b LLM & NV-Embed-v2 
 
 ## Features
 
-- **Advanced Embeddings**: Uses state-of-the-art sentence-transformers models
 - **Powerful LLMs**: Supports Mistral, Llama, Gemma, and other HuggingFace models
 - **Quantization**: 4-bit and 8-bit quantization for reduced memory usage
 - **Multi-GPU Support**: Automatic device mapping for large models
