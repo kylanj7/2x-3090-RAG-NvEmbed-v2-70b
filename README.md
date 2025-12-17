@@ -79,36 +79,6 @@ EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 ```
 
-### LLM Models
-
-```python
-# Strong performance (7B params, ~4GB VRAM with 4-bit quant)
-LLM_MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
-
-# Efficient (3B params, ~2GB VRAM with 4-bit quant)
-LLM_MODEL = "meta-llama/Llama-3.2-3B-Instruct"
-
-# Balanced (9B params, ~5GB VRAM with 4-bit quant)
-LLM_MODEL = "google/gemma-2-9b-it"
-
-# Very efficient (3.8B params, ~2GB VRAM with 4-bit quant)
-LLM_MODEL = "microsoft/Phi-3-mini-4k-instruct"
-```
-
-### Quantization Settings
-
-```python
-# Enable 4-bit quantization (recommended)
-USE_4BIT_QUANTIZATION = True
-
-# Or use 8-bit quantization
-USE_8BIT_QUANTIZATION = True
-
-# Disable for full precision (requires more VRAM)
-USE_4BIT_QUANTIZATION = False
-USE_8BIT_QUANTIZATION = False
-```
-
 ## Usage
 
 ### 1. Index Documents
