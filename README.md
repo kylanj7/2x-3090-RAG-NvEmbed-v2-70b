@@ -17,18 +17,49 @@ RAG system using HuggingFace models with quantization support for efficient infe
 - 8GB+ GPU VRAM (16GB+ recommended for larger models)
 - 16GB+ system RAM
 
-## Installation
-
+### Fedora/RHEL Setup
 ```bash
+# Install system dependencies
+sudo dnf groupinstall "Development Tools"
+sudo dnf install python3-devel libffi-devel gcc-c++ openssl-devel bzip2-devel
+
 # Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m venv RAG_env
+source RAG_env/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Optional: Install flash-attention for better performance (requires CUDA)
 # pip install flash-attn --no-build-isolation
+```
+
+### Ubuntu/Debian Setup
+```bash
+# Install system dependencies
+sudo apt update
+sudo apt install build-essential python3-dev libffi-dev python3-pip
+
+# Create virtual environment
+python3 -m venv RAG_env
+source RAG_env/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Windows Setup
+```bash
+# Use WSL2 or native Windows with Visual Studio Build Tools
+# Create virtual environment
+python -m venv RAG_env
+RAG_env\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Model Selection
