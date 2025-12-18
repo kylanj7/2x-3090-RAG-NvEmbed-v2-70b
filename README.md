@@ -12,7 +12,7 @@ RAG system using HuggingFace models with quantization support for efficient infe
 
 ## Requirements
 
-- Python 3.9+
+- Python >3.9==<3.11
 - CUDA 11.8+ (for GPU acceleration)
 - 8GB+ GPU VRAM (16GB+ recommended for larger models)
 - 16GB+ system RAM
@@ -24,7 +24,8 @@ sudo dnf groupinstall "Development Tools"
 sudo dnf install python3-devel libffi-devel gcc-c++ openssl-devel bzip2-devel
 
 # Create virtual environment
-python3 -m venv RAG_env
+
+python3.10 -m venv RAG_env
 source RAG_env/bin/activate
 
 # Upgrade pip
