@@ -5,7 +5,7 @@ sentence-transformers>=2.2.2
 accelerate>=0.24.0
 bitsandbytes>=0.41.0
 
-# LangChain stack (your working versions)
+# LangChain stack (tested, working)
 langchain
 langchain-chroma
 langchain-text-splitters
