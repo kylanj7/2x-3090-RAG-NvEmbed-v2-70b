@@ -13,10 +13,32 @@ RAG system using HuggingFace models with quantization support for efficient infe
 ## Requirements
 
 - Python >3.9==<3.11
-- CUDA 11.8+ (for GPU acceleration)
-- 8GB+ GPU VRAM (16GB+ recommended for larger models)
-- 16GB+ system RAM
+- CUDA 11.8+
 
+```bash
+# requirements.txt
+torch>=2.0.0
+transformers>=4.35.0
+sentence-transformers>=2.2.2
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+
+# LangChain stack (tested, working)
+langchain
+langchain-chroma
+langchain-text-splitters
+pypdf
+chromadb
+PyMuPDF
+
+# Utilities
+tqdm>=4.65.0
+numpy>=1.24.0
+
+# NVIDIA NV-Embed-v2 dependencies
+datasets
+einops
+```
 ### Fedora/RHEL Setup
 ```bash
 # Install system dependencies
